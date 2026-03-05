@@ -1,80 +1,105 @@
-/* =========================
-GLOBAL FONT SETTINGS
+/* =====================================================
+TL TECHNOLOGIES - CUSTOM CSS
 Updated: March 5, 2026
-By: Sangeetha C G
-========================= */
+Updated By: Sangeetha C G
+Purpose: Custom styling overrides for TL Technologies
+===================================================== */
+
+
+/* =====================================================
+GLOBAL TYPOGRAPHY
+===================================================== */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
+h1 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+
+
+/* =====================================================
+LOGO STYLING
+===================================================== */
+
 .logo-img {
-	width: 300px; /* Fixed width for large screens */
-	height: auto; /* Maintain aspect ratio */
+    width: 300px; /* Large screens */
+    height: auto;
 }
-/* Medium screens (768px to 991px) */
+
+/* Medium screens */
 @media (max-width: 991.98px) {
-	.logo-img {
-		width: 250px; /* Smaller width for medium screens */
-	}
+    .logo-img {
+        width: 250px;
+    }
 }
-/* Small screens (767px and below) */
+
+/* Small screens */
 @media (max-width: 767.98px) {
-	.logo-img {
-		width: 200px; /* Even smaller width for small screens */
-	}
+    .logo-img {
+        width: 200px;
+    }
 }
 
 
 
-/* map */
-
+/* =====================================================
+MAP CONTAINER (RESPONSIVE)
+===================================================== */
 
 .map-container {
-	position: relative;
-	padding-bottom: 100%; /* Creates a square aspect ratio */
-	overflow: hidden;
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
 }
 
 @media (max-width: 991px) {
-	.map-container {
-		padding-bottom: 75%; /* Adjusts aspect ratio for smaller screens */
-	}
+    .map-container {
+        padding-bottom: 75%;
+    }
 }
 
 @media (max-width: 767px) {
-	.map-container {
-		padding-bottom: 56.25%; /* 16:9 aspect ratio for mobile */
-	}
+    .map-container {
+        padding-bottom: 56.25%;
+    }
 }
 
 
-/* footer */
+
+/* =====================================================
+FOOTER TEXT
+===================================================== */
 
 .hover-text-white:hover {
     color: white !important;
 }
 
-.text-gray-100{
-	color: rgb(255 255 255 / 81%) !important;
-	font-size: 1.13em !important;
+.text-gray-100 {
+    color: rgb(255 255 255 / 81%) !important;
+    font-size: 1.13em !important;
 }
 
-.text-gray-150{
-	/* color: #c60000; */
-	color: #5a5a5a !important;
+.text-gray-150 {
+    color: #5a5a5a !important;
     font-weight: 700;
 }
 
 
-/* cookie consent  */
+
+/* =====================================================
+COOKIE CONSENT BAR
+===================================================== */
 
 #cookieConsent {
     background-color: rgba(0, 0, 0, 0.9);
@@ -87,30 +112,19 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-/* Flex Container Styling */
 .cookieConsentContainer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-/* custom media query */
-
-/* @media (max-width: 2289px) {
-	.custom-text-background {
-		font-size: 8rem !important;
-	}
-} */
-
-/* @media (max-width: 2117px) {
-	.custom-text-background {
-		font-size: 7.5rem !important;
-	}
-} */
 
 
+
+/* =====================================================
+LOADING TITLE ANIMATION
+===================================================== */
 
 #loading-title {
     opacity: 1;
     transition: opacity 300ms ease-in-out;
 }
-
